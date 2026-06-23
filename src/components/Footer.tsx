@@ -36,10 +36,10 @@ export default function Footer() {
               </div>
             </div>
             <div className="max-w-6xl mx-auto w-full flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
-              <h1 className="text-[15vw] sm:text-[12vw] lg:text-[10vw] leading-[0.8] text-white font-bold tracking-tight">
-                ЮМАГУЗА
+              <h1 className="text-[10vw] sm:text-[8vw] lg:text-[6vw] leading-[0.8] text-white font-bold tracking-tight">
+                ЮМАГУЗИНО КАТЕР
               </h1>
-              <p className="text-neutral-500 text-sm">{new Date().getFullYear()} Юмагуза Тур</p>
+              <p className="text-neutral-500 text-sm">{new Date().getFullYear()} Юмагузино Катер</p>
             </div>
           </div>
         </div>

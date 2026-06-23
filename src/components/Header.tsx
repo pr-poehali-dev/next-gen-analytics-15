@@ -25,7 +25,7 @@ export default function Header({ className }: HeaderProps) {
     >
       <div className="flex justify-between items-center px-6 py-4 max-w-6xl mx-auto">
         <div className={`text-sm uppercase tracking-widest font-bold ${scrolled ? "text-black" : "text-white"}`}>
-          Юмагуза Тур
+          Юмагузино Катер
         </div>
         <nav className="hidden md:flex gap-8">
           {[

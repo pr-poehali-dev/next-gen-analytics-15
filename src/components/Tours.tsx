@@ -6,7 +6,7 @@ const tours = [
     title: "Водопад и скала Трон",
     duration: "1 час",
     price: "7 000 ₽",
-    img: "https://cdn.poehali.dev/projects/abaa77cc-bade-4d25-b3ec-2270a1774e1b/files/1497df41-9b80-4d9f-a608-ca596f7bf740.jpg",
+    img: "https://cdn.poehali.dev/projects/abaa77cc-bade-4d25-b3ec-2270a1774e1b/files/e03024ed-683a-4cd8-a0d0-7da678995f47.jpg",
     intro: "Путешествие, в котором каждый поворот открывает новую грань природы и ощущений.",
     points: [
       { name: "Водопад Климентий", desc: "Скрытый среди зелени уголок, где вода с мягким шумом срывается вниз. Здесь хочется остановиться, вдохнуть глубже и на мгновение забыть о времени." },
@@ -19,7 +19,7 @@ const tours = [
     title: "Семь братьев и пещеры",
     duration: "2 часа",
     price: "14 000 ₽",
-    img: "https://cdn.poehali.dev/projects/abaa77cc-bade-4d25-b3ec-2270a1774e1b/files/0bfeeb16-923b-44d9-b79a-6122659888bf.jpg",
+    img: "https://cdn.poehali.dev/projects/abaa77cc-bade-4d25-b3ec-2270a1774e1b/files/9e204c8c-80f8-4595-a23a-08ef169de8e4.jpg",
     intro: "Весь маршрут №1, плюс новые точки вглубь водохранилища.",
     points: [
       { name: "Гора Азан-таш", desc: "Возвышается над землёй, словно древний страж, хранящий тайны веков. Вид с катера." },
@@ -33,7 +33,7 @@ const tours = [
     title: "Остров Сакасска",
     duration: "3 часа",
     price: "21 000 ₽",
-    img: "https://cdn.poehali.dev/projects/abaa77cc-bade-4d25-b3ec-2270a1774e1b/files/c88e9a78-5d44-433f-9412-baad5a4befc0.jpg",
+    img: "https://cdn.poehali.dev/projects/abaa77cc-bade-4d25-b3ec-2270a1774e1b/files/6eafd142-f12c-4984-afd9-a542f6e891de.jpg",
     intro: "Весь маршрут №1 и №2, плюс легендарный остров посреди водохранилища.",
     points: [
       { name: "Остров Сакасска", desc: "Раньше был горой и частью одноимённой деревни. После заполнения водоёма вершина осталась над гладью — одинокая, спокойная, словно наблюдающая за временем." },
@@ -44,7 +44,7 @@ const tours = [
     title: "Полное погружение",
     duration: "4 часа",
     price: "28 000 ₽",
-    img: "https://cdn.poehali.dev/projects/abaa77cc-bade-4d25-b3ec-2270a1774e1b/files/1497df41-9b80-4d9f-a608-ca596f7bf740.jpg",
+    img: "https://cdn.poehali.dev/projects/abaa77cc-bade-4d25-b3ec-2270a1774e1b/files/d90a29fb-37fa-4845-833e-8033f49c27b0.jpg",
     intro: "Весь маршрут №1, №2 и №3, плюс самые впечатляющие точки водохранилища.",
     points: [
       { name: "Скала Крейсер", desc: "Узкий утёс поднимается над водой строго и мощно — в хорошем освещении силуэт напоминает нос судна, застывшего среди гор. Вид с катера." },
