@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import Tours from "@/components/Tours";
 import Promo from "@/components/Promo";
 import Prices from "@/components/Prices";
-import Booking from "@/components/Booking";
+
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -14,7 +14,7 @@ const Index = () => {
       <Tours />
       <Promo />
       <Prices />
-      <Booking />
+
       <Footer />
     </main>
   );
