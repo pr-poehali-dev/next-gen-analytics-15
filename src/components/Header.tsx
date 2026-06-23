@@ -44,16 +44,16 @@ export default function Header({ className }: HeaderProps) {
             </button>
           ))}
         </nav>
-        <button
-          onClick={() => scrollTo("booking")}
+        <a
+          href="tel:+79279278037"
           className={`text-xs uppercase tracking-widest px-5 py-2 border transition-all duration-300 ${
             scrolled
               ? "border-black text-black hover:bg-black hover:text-white"
               : "border-white text-white hover:bg-white hover:text-black"
           }`}
         >
-          Заказать
-        </button>
+          +7 (927) 927-80-37
+        </a>
       </div>
     </header>
   );

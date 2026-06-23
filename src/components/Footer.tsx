@@ -16,8 +16,8 @@ export default function Footer() {
               </div>
               <div className="flex flex-col gap-2">
                 <h3 className="mb-2 uppercase text-neutral-500 text-xs tracking-widest">Контакты</h3>
-                <a href="tel:+70000000000" className="text-white hover:text-neutral-400 transition-colors text-sm">
-                  +7 (000) 000-00-00
+                <a href="tel:+79279278037" className="text-white hover:text-neutral-400 transition-colors text-sm">
+                  +7 (927) 927-80-37
                 </a>
                 <a href="https://t.me/max" className="text-white hover:text-neutral-400 transition-colors text-sm">
                   Telegram
