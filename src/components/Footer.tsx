@@ -19,8 +19,11 @@ export default function Footer() {
                 <a href="tel:+79279278037" className="text-white hover:text-neutral-400 transition-colors text-sm">
                   +7 (927) 927-80-37
                 </a>
-                <a href="https://t.me/max" className="text-white hover:text-neutral-400 transition-colors text-sm">
-                  Telegram
+                <a href="https://vk.ru/id819159154" target="_blank" rel="noopener noreferrer" className="text-white hover:text-neutral-400 transition-colors text-sm">
+                  ВКонтакте
+                </a>
+                <a href="https://vk.ru/club238635472" target="_blank" rel="noopener noreferrer" className="text-white hover:text-neutral-400 transition-colors text-sm">
+                  Группа ВКонтакте
                 </a>
                 <a href="mailto:forsage.plus@mail.ru" className="text-white hover:text-neutral-400 transition-colors text-sm">
                   forsage.plus@mail.ru
