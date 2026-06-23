@@ -19,18 +19,18 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full"
       >
         <img
-          src="/images/mountain-landscape.jpg"
-          alt="Mountain landscape"
+          src="https://cdn.poehali.dev/projects/abaa77cc-bade-4d25-b3ec-2270a1774e1b/files/33542e5f-2a36-4af5-b332-66e03f83ec2a.jpg"
+          alt="Скоростной катер на Юмагузинском водохранилище"
           className="w-full h-full object-cover"
         />
       </motion.div>
 
       <div className="relative z-10 text-center text-white">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
-          ОТКРОЙ
+          СКОРОСТЬ И ВОДА
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto px-6 opacity-90">
-          Исследуй границы дизайна с иммерсивным параллакс-эффектом
+          Прогулки на скоростном катере по Юмагузинскому водохранилищу — адреналин и красота дикой природы Башкирии
         </p>
       </div>
     </div>
