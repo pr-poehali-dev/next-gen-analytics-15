@@ -1,20 +1,20 @@
 const tours = [
   {
-    title: "Обзорная прогулка",
+    title: "Разгон по глади",
     duration: "1 час",
-    desc: "Классический маршрут по водохранилищу — скалы, заливы, свежий ветер и панорамные виды горного каньона.",
+    desc: "Выходим на простор — полный газ, солёный ветер в лицо и скалы, летящие мимо бортов. Лучший способ почувствовать водохранилище.",
     img: "https://cdn.poehali.dev/projects/abaa77cc-bade-4d25-b3ec-2270a1774e1b/files/33542e5f-2a36-4af5-b332-66e03f83ec2a.jpg",
   },
   {
-    title: "Экскурсия в каньон",
+    title: "Вглубь каньона",
     duration: "2 часа",
-    desc: "Заплываем в живописные ущелья — отвесные скалы, эхо воды и дикие места, недоступные по суше.",
+    desc: "Уходим туда, куда пешком не добраться. Узкие ущелья, отвесные стены известняка и полная тишина — только эхо мотора.",
     img: "https://cdn.poehali.dev/projects/abaa77cc-bade-4d25-b3ec-2270a1774e1b/files/0bfeeb16-923b-44d9-b79a-6122659888bf.jpg",
   },
   {
-    title: "Аренда катера",
+    title: "Катер в ваше распоряжение",
     duration: "от 1 часа",
-    desc: "Возьмите катер под управление опытного капитана. Маршрут — на ваш выбор. Идеально для компании и семьи.",
+    desc: "Никакого маршрута — только ваши желания и опытный капитан. Подходит для романтики, фотосессий и дружеских вылазок.",
     img: "https://cdn.poehali.dev/projects/abaa77cc-bade-4d25-b3ec-2270a1774e1b/files/c88e9a78-5d44-433f-9412-baad5a4befc0.jpg",
   },
 ];
@@ -27,8 +27,8 @@ export default function Tours() {
   return (
     <section id="tours" className="bg-white py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <p className="text-xs uppercase tracking-[0.3em] text-neutral-400 mb-3">Что мы предлагаем</p>
-        <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-16">Наши маршруты</h2>
+        <p className="text-xs uppercase tracking-[0.3em] text-neutral-400 mb-3">Выбери своё приключение</p>
+        <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-16">Куда отправимся?</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {tours.map((tour) => (

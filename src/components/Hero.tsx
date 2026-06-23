@@ -30,16 +30,16 @@ export default function Hero() {
       <div className="relative z-10 text-center text-white px-6">
         <p className="text-sm uppercase tracking-[0.3em] mb-4 opacity-80">Башкирия · Юмагузинское водохранилище</p>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 leading-tight">
-          Прогулки<br />на катере
+          Там, где<br />кончается суша
         </h1>
         <p className="text-lg md:text-xl max-w-xl mx-auto opacity-90 mb-10 leading-relaxed">
-          Скоростные экскурсии по горному каньону среди дикой природы Урала. Незабываемые впечатления для всей семьи.
+          Скоростной катер, горные скалы в метре от борта и ветер, который сдувает всё лишнее. Юмагуза ждёт.
         </p>
         <button
           onClick={scrollToBooking}
           className="bg-white text-black px-8 py-4 text-sm uppercase tracking-widest font-semibold hover:bg-opacity-90 transition-all duration-300"
         >
-          Забронировать
+          Хочу на воду
         </button>
       </div>
 

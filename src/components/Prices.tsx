@@ -1,28 +1,28 @@
 const prices = [
   {
-    title: "Обзорная прогулка",
+    title: "Быстрый старт",
     duration: "1 час",
     price: "3 000",
     unit: "за катер",
     capacity: "до 6 человек",
-    features: ["Экипаж включён", "Маршрут по водохранилищу", "Остановки для фото"],
+    features: ["Опытный капитан на борту", "Лучшие видовые точки", "Остановки для фото"],
   },
   {
-    title: "Экскурсия в каньон",
+    title: "Вглубь каньона",
     duration: "2 часа",
     price: "5 500",
     unit: "за катер",
     capacity: "до 6 человек",
-    features: ["Экипаж включён", "Маршрут в ущелья", "Рассказ о природе", "Остановки для фото"],
+    features: ["Опытный капитан на борту", "Заповедные ущелья", "Рассказ о природе", "Остановки для фото"],
     featured: true,
   },
   {
-    title: "Аренда на полдня",
+    title: "Полное погружение",
     duration: "4 часа",
     price: "9 000",
     unit: "за катер",
     capacity: "до 6 человек",
-    features: ["Экипаж включён", "Маршрут на выбор", "Любые остановки", "Гибкий график"],
+    features: ["Опытный капитан на борту", "Маршрут под ваши желания", "Купание в заливах", "Свобода без ограничений"],
   },
 ];
 
@@ -34,8 +34,8 @@ export default function Prices() {
   return (
     <section id="prices" className="bg-neutral-50 py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <p className="text-xs uppercase tracking-[0.3em] text-neutral-400 mb-3">Стоимость</p>
-        <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-16">Цены</h2>
+        <p className="text-xs uppercase tracking-[0.3em] text-neutral-400 mb-3">Без переплат</p>
+        <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-16">Сколько стоит незабываемое?</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {prices.map((plan) => (
@@ -87,7 +87,7 @@ export default function Prices() {
         </div>
 
         <p className="text-neutral-400 text-sm mt-8 text-center">
-          Цены указаны за весь катер. Групповые скидки и специальные условия — уточняйте при бронировании.
+          Цена за весь катер — делите на компанию, и выйдет дешевле кино. Скидки для больших групп — уточняйте.
         </p>
       </div>
     </section>

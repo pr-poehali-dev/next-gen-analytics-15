@@ -25,31 +25,31 @@ export default function Booking() {
     <section id="booking" className="bg-neutral-900 py-24 px-6">
       <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
         <div className="text-white">
-          <p className="text-xs uppercase tracking-[0.3em] text-neutral-400 mb-3">Бронирование</p>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">Запишитесь<br />на прогулку</h2>
+          <p className="text-xs uppercase tracking-[0.3em] text-neutral-400 mb-3">Поехали!</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">Оставьте заявку —<br />остальное за нами</h2>
           <p className="text-neutral-400 leading-relaxed mb-10">
-            Оставьте заявку — мы свяжемся с вами в течение часа, уточним детали и подтвердим бронь.
+            Напишите имя, телефон и желаемую дату. Перезвоним в течение часа, подберём время и ответим на все вопросы.
           </p>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
               <div className="w-8 h-8 rounded-full border border-neutral-600 flex items-center justify-center text-neutral-400 text-sm shrink-0">1</div>
               <div>
                 <p className="text-white font-medium">Оставьте заявку</p>
-                <p className="text-neutral-400 text-sm">Заполните форму с удобной датой</p>
+                <p className="text-neutral-400 text-sm">Форма займёт 30 секунд</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <div className="w-8 h-8 rounded-full border border-neutral-600 flex items-center justify-center text-neutral-400 text-sm shrink-0">2</div>
               <div>
                 <p className="text-white font-medium">Мы перезвоним</p>
-                <p className="text-neutral-400 text-sm">Уточним детали и подберём время</p>
+                <p className="text-neutral-400 text-sm">В течение часа согласуем всё до мелочей</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <div className="w-8 h-8 rounded-full border border-neutral-600 flex items-center justify-center text-neutral-400 text-sm shrink-0">3</div>
               <div>
-                <p className="text-white font-medium">Отправляйтесь в путь</p>
-                <p className="text-neutral-400 text-sm">Приезжайте в назначенное время и наслаждайтесь!</p>
+                <p className="text-white font-medium">Прыгайте на борт</p>
+                <p className="text-neutral-400 text-sm">Приезжайте — мотор уже прогрет</p>
               </div>
             </div>
           </div>
@@ -104,10 +104,10 @@ export default function Booking() {
             {status === "loading" ? "Отправляем..." : "Отправить заявку"}
           </button>
           {status === "success" && (
-            <p className="text-green-400 text-sm text-center">Заявка отправлена! Мы свяжемся с вами в течение часа.</p>
+            <p className="text-green-400 text-sm text-center">Отлично! Заявка принята — скоро услышимся.</p>
           )}
           {status === "error" && (
-            <p className="text-red-400 text-sm text-center">Ошибка. Попробуйте ещё раз или позвоните нам.</p>
+            <p className="text-red-400 text-sm text-center">Что-то пошло не так. Попробуйте ещё раз или напишите нам напрямую.</p>
           )}
         </form>
       </div>

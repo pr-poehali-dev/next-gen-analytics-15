@@ -2,10 +2,10 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 
 const facts = [
-  { num: "105 км²", label: "площадь водохранилища" },
-  { num: "35 м", label: "глубина в каньоне" },
-  { num: "6", label: "мест на борту" },
-  { num: "5 лет", label: "опыт капитана" },
+  { num: "105 км²", label: "площадь — как маленькое море" },
+  { num: "35 м", label: "глубина в самом каньоне" },
+  { num: "до 6", label: "гостей на борту" },
+  { num: "100+", label: "довольных пассажиров" },
 ];
 
 export default function Promo() {
@@ -35,11 +35,11 @@ export default function Promo() {
         </div>
 
         <h3 className="absolute top-12 left-6 text-white uppercase z-10 text-xs tracking-[0.3em] opacity-70">
-          Дикая природа Башкирии
+          Это не просто прогулка
         </h3>
 
         <p className="absolute bottom-12 left-6 right-6 text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl max-w-3xl z-10 leading-tight font-light">
-          Заповедные скалы, чистейшая вода и тишина горного каньона. Места, куда можно добраться только по воде.
+          Здесь нет толпы, нет вай-фая и нет суеты. Только вода, скалы и ощущение, что ты нашёл что-то настоящее.
         </p>
       </div>
 
