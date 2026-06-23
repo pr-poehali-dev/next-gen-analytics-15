@@ -1,25 +1,64 @@
+import { useState } from "react";
+
 const tours = [
   {
-    title: "Разгон по глади",
+    num: "01",
+    title: "Водопад и скала Трон",
     duration: "1 час",
-    desc: "Выходим на простор — полный газ, солёный ветер в лицо и скалы, летящие мимо бортов. Лучший способ почувствовать водохранилище.",
-    img: "https://cdn.poehali.dev/projects/abaa77cc-bade-4d25-b3ec-2270a1774e1b/files/33542e5f-2a36-4af5-b332-66e03f83ec2a.jpg",
+    price: "7 000 ₽",
+    img: "https://cdn.poehali.dev/projects/abaa77cc-bade-4d25-b3ec-2270a1774e1b/files/1497df41-9b80-4d9f-a608-ca596f7bf740.jpg",
+    intro: "Путешествие, в котором каждый поворот открывает новую грань природы и ощущений.",
+    points: [
+      { name: "Водопад Климентий", desc: "Скрытый среди зелени уголок, где вода с мягким шумом срывается вниз. Здесь хочется остановиться, вдохнуть глубже и на мгновение забыть о времени." },
+      { name: "Скала Трон", desc: "Величественная и строгая, словно природный символ силы и спокойствия." },
+      { name: "Купание с катера", desc: "Лёгкий ветер, солнечные блики на воде и ощущение полного счастья." },
+    ],
   },
   {
-    title: "Вглубь каньона",
+    num: "02",
+    title: "Семь братьев и пещеры",
     duration: "2 часа",
-    desc: "Уходим туда, куда пешком не добраться. Узкие ущелья, отвесные стены известняка и полная тишина — только эхо мотора.",
+    price: "14 000 ₽",
     img: "https://cdn.poehali.dev/projects/abaa77cc-bade-4d25-b3ec-2270a1774e1b/files/0bfeeb16-923b-44d9-b79a-6122659888bf.jpg",
+    intro: "Весь маршрут №1, плюс новые точки вглубь водохранилища.",
+    points: [
+      { name: "Гора Азан-таш", desc: "Возвышается над землёй, словно древний страж, хранящий тайны веков. Вид с катера." },
+      { name: "Пещера Голубиный грот", desc: "Прохладное убежище, где мягкий полумрак переплетается с тишиной природы. Вид с катера." },
+      { name: "Скала Семь братьев", desc: "Суровая и величественная, словно застывшие в камне великаны." },
+      { name: "Водопад Аккаваз", desc: "Струи стремятся вниз и наполняют воздух свежестью. Возможна высадка на берег — родниковая вода и красивые фото." },
+    ],
   },
   {
-    title: "Катер в ваше распоряжение",
-    duration: "от 1 часа",
-    desc: "Никакого маршрута — только ваши желания и опытный капитан. Подходит для романтики, фотосессий и дружеских вылазок.",
+    num: "03",
+    title: "Остров Сакасска",
+    duration: "3 часа",
+    price: "21 000 ₽",
     img: "https://cdn.poehali.dev/projects/abaa77cc-bade-4d25-b3ec-2270a1774e1b/files/c88e9a78-5d44-433f-9412-baad5a4befc0.jpg",
+    intro: "Весь маршрут №1 и №2, плюс легендарный остров посреди водохранилища.",
+    points: [
+      { name: "Остров Сакасска", desc: "Раньше был горой и частью одноимённой деревни. После заполнения водоёма вершина осталась над гладью — одинокая, спокойная, словно наблюдающая за временем." },
+    ],
+  },
+  {
+    num: "04",
+    title: "Полное погружение",
+    duration: "4 часа",
+    price: "28 000 ₽",
+    img: "https://cdn.poehali.dev/projects/abaa77cc-bade-4d25-b3ec-2270a1774e1b/files/1497df41-9b80-4d9f-a608-ca596f7bf740.jpg",
+    intro: "Весь маршрут №1, №2 и №3, плюс самые впечатляющие точки водохранилища.",
+    points: [
+      { name: "Скала Крейсер", desc: "Узкий утёс поднимается над водой строго и мощно — в хорошем освещении силуэт напоминает нос судна, застывшего среди гор. Вид с катера." },
+      { name: "Пещера Театральная", desc: "Своды поднимаются высоко, создавая ощущение огромного зала, где каждый звук отзывается гулким эхом. Желающие смогут посетить пещеру." },
+      { name: "Скала Чёртов палец", desc: "Стоит, как каменный указующий перст, застывший между водой и небом. Вид с катера." },
+      { name: "Скала Вождей", desc: "На отвесной каменной стене угадываются знаменитые портреты Маркса, Энгельса и Ленина. Изображения около 50×70 метров — производит сильное впечатление даже издалека. Вид с катера." },
+      { name: "Пещера Акбута", desc: "Спокойная, суровая красота и дыхание истории. Камень хранит следы очень давнего прошлого. Желающие смогут посетить пещеру." },
+    ],
   },
 ];
 
 export default function Tours() {
+  const [open, setOpen] = useState<number | null>(null);
+
   const scrollToBooking = () => {
     document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -30,21 +69,59 @@ export default function Tours() {
         <p className="text-xs uppercase tracking-[0.3em] text-neutral-400 mb-3">Выбери своё приключение</p>
         <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-16">Куда отправимся?</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {tours.map((tour) => (
-            <div key={tour.title} className="group cursor-pointer" onClick={scrollToBooking}>
-              <div className="overflow-hidden mb-5 h-64">
-                <img
-                  src={tour.img}
-                  alt={tour.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-              <div className="flex justify-between items-start mb-2">
-                <h3 className="text-xl font-bold text-neutral-900">{tour.title}</h3>
-                <span className="text-sm text-neutral-400 whitespace-nowrap ml-4">{tour.duration}</span>
-              </div>
-              <p className="text-neutral-600 text-sm leading-relaxed">{tour.desc}</p>
+        <div className="flex flex-col divide-y divide-neutral-100">
+          {tours.map((tour, i) => (
+            <div key={tour.num}>
+              <button
+                className="w-full text-left py-8 flex items-start gap-6 group"
+                onClick={() => setOpen(open === i ? null : i)}
+              >
+                <span className="text-xs text-neutral-300 font-mono mt-1 shrink-0 w-6">{tour.num}</span>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-baseline justify-between gap-4 flex-wrap">
+                    <h3 className="text-xl md:text-2xl font-bold text-neutral-900 group-hover:text-neutral-600 transition-colors">
+                      {tour.title}
+                    </h3>
+                    <div className="flex items-center gap-6 shrink-0">
+                      <span className="text-sm text-neutral-400">{tour.duration}</span>
+                      <span className="text-base font-semibold text-neutral-900">{tour.price}</span>
+                      <span className={`text-neutral-400 transition-transform duration-300 ${open === i ? "rotate-45" : ""}`}>
+                        +
+                      </span>
+                    </div>
+                  </div>
+                  <p className="text-sm text-neutral-400 mt-1">{tour.intro}</p>
+                </div>
+              </button>
+
+              {open === i && (
+                <div className="pb-10 pl-12 grid md:grid-cols-2 gap-8">
+                  <div className="flex flex-col gap-5">
+                    {tour.points.map((p) => (
+                      <div key={p.name} className="flex gap-3">
+                        <span className="w-1.5 h-1.5 rounded-full bg-neutral-300 mt-2 shrink-0" />
+                        <div>
+                          <p className="font-semibold text-neutral-900 text-sm mb-0.5">{p.name}</p>
+                          <p className="text-neutral-500 text-sm leading-relaxed">{p.desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                    <button
+                      onClick={scrollToBooking}
+                      className="mt-2 self-start bg-neutral-900 text-white text-xs uppercase tracking-widest px-6 py-3 hover:bg-neutral-700 transition-colors"
+                    >
+                      Забронировать
+                    </button>
+                  </div>
+                  <div className="overflow-hidden h-64 md:h-auto">
+                    <img
+                      src={tour.img}
+                      alt={tour.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              )}
             </div>
           ))}
         </div>
